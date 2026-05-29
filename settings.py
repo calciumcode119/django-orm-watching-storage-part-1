@@ -1,22 +1,17 @@
-from dotenv import load_dotenv
-import os
-load_dotenv()
-
-
 DATABASES = {
     'default': {
-        'ENGINE': os.environ['ENGINE'],
-        'HOST': os.environ['HOST'],
-        'PORT': os.environ['PORT'],
-        'NAME': os.environ['NAME'],
-        'USER': os.environ['USER'],
-        'PASSWORD': os.environ['PASSWORD'],
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': '',
+        'PORT': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'REPLACE_ME'
 
 TIME_ZONE = 'Europe/Moscow'
 
