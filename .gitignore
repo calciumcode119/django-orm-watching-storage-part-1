@@ -1,6 +1,7 @@
 *.env
 venv\
 __pycache__
+**\__pycache__
 .replit
 pyproject.toml
 poetry.lock
